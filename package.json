@@ -1,0 +1,35 @@
+{
+  "name": "wg-scanner",
+  "version": "2.0.0",
+  "description": "File scanner / walker",
+  "author": "Alexandre Morin <aggmorin@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "debug": "iron-node index.js",
+    "debug-mocha": "iron-node node_modules/mocha/bin/_mocha"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://loulex.com/var/git/wg-scanner.git"
+  },
+  "dependencies": {
+    "extend":           "~3.0.0",
+    "moment":           "~2.10.6",
+    "fs-extra":         "~0.26.3",
+    "wg-log": "*",
+    "wg-collections": "*",
+    "wg-utils": "*"
+  },
+  "devDependencies": {
+    "del": "~2.2.2",
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "gulp-gzip": "~1.4.0",
+    "gulp-tar": "~1.9.0",
+    "mocha": "~2.3.4",
+    "uuid": "~2.0.3"
+  }
+}
