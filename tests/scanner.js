@@ -43,7 +43,6 @@ describe('Scanner', function() {
       return Scanner.scan(storageDelegate, progressDelegate, scope, handlers, {}, function(err, cumulatedStats) {
         if (err) return done(err);
         checkStats(cumulatedStats, 1, 1, 0, 1, 0, 0);
-        debugger;
         assert(storageDelegate.test_length() === 1);
         var found = storageDelegate._getByShortFilename('certificate.png');
         assert(found !== undefined);
